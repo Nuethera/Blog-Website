@@ -23,7 +23,7 @@ class RegisterForm(FlaskForm):
 class LoginForm(FlaskForm):
     email = StringField("Your Email", validators=[DataRequired(), Email()])
     password = PasswordField("Your Password", validators=[DataRequired()])
-    submit = SubmitField("Register")
+    submit = SubmitField("Login")
 
 
 class CommentForm(FlaskForm):
